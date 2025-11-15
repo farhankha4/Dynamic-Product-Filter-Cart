@@ -194,7 +194,7 @@ export default function App() {
             {filtered.map((product) => (
               <div
                 key={product.id}
-                className="bg-white dark:bg-gray-800 shadow-xl dark:shadow-gray-900/50 rounded-xl p-6 flex flex-col transform hover:scale-105 transition-all duration-300 border border-gray-200 dark:border-gray-700"
+                className="bg-white dark:bg-gray-800 shadow-xl dark:shadow-gray-900/50 rounded-xl p-6 flex flex-col transition-all duration-300 border border-gray-200 dark:border-gray-700"
               >
                 <img
                   src={product.image}
@@ -255,7 +255,7 @@ export default function App() {
                           >
                             -
                           </button>
-                          <span className="font-bold text-lg min-w-[2rem] text-center text-gray-900 dark:text-white">{item.qty}</span>
+                          <span className="font-bold text-lg min-w-8 text-center text-gray-900 dark:text-white">{item.qty}</span>
                           <button
                             onClick={() => modifyQty(item.id, +0.5)}
                             className="px-4 py-2 rounded-full bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 text-green-600 dark:text-green-400 font-bold transition-all duration-200 transform hover:scale-110 shadow-md"
