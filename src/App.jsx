@@ -250,14 +250,14 @@ export default function App() {
                       <div className="flex flex-col items-end gap-3">
                         <div className="flex items-center gap-3">
                           <button
-                            onClick={() => modifyQty(item.id, -0.5)}
+                            onClick={() => modifyQty(item.id, -1)}
                             className="px-4 py-2 rounded-full bg-red-100 dark:bg-red-900 hover:bg-red-200 dark:hover:bg-red-800 text-red-600 dark:text-red-400 font-bold transition-all duration-200 transform hover:scale-110 shadow-md"
                           >
                             -
                           </button>
                           <span className="font-bold text-lg min-w-8 text-center text-gray-900 dark:text-white">{item.qty}</span>
                           <button
-                            onClick={() => modifyQty(item.id, +0.5)}
+                            onClick={() => modifyQty(item.id, +1)}
                             className="px-4 py-2 rounded-full bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 text-green-600 dark:text-green-400 font-bold transition-all duration-200 transform hover:scale-110 shadow-md"
                           >
                             +
